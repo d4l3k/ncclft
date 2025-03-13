@@ -68,7 +68,7 @@ static ncclResult_t socketProgress(int op, struct ncclSocket* sock, void* ptr, i
       return ncclSuccess;
     } else {
       char line[SOCKET_NAME_MAXLEN+1];
-      WARN("socketProgress: Connection closed by remote peer %s", ncclSocketToString(&sock->addr, line, 0));
+      //WARN("socketProgress: Connection closed by remote peer %s", ncclSocketToString(&sock->addr, line, 0));
       return ncclRemoteError;
     }
   }
