@@ -932,7 +932,7 @@ void* ncclProxyProgress(void *proxyState_) {
       }
     }
     lastIdle = idle;
-  } while (state->stop == 0 || (state->stop == 1 && state->active));
+  } while (state->stop == 0);
   return NULL;
 }
 
